@@ -4,3 +4,4 @@ This project implements a **Hybrid Quantum Neural Network (QNN)** using **PennyL
 - A **2D decision boundary** of the quantum classifier
 - A **Bloch sphere view** that maps prediction confidence to quantum states
 
+## 🔍 Problem Overview
