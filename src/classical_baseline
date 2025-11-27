@@ -1,0 +1,23 @@
+# src/classical_baseline.py
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+from .data import load_iris_petal
+
+
+def train_logistic_regression():
+    X_train, X_test, y_train, y_test, _, _ = load_iris_petal()
+
+    clf = LogisticRegression()
+    clf.fit(X_train, y_train)
+
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_test, y_pred)
+
+    print(f"Logistic Regression Test Accuracy: {acc:.3f}")
+
+    return clf
+
+
+if __name__ == "__main__":
+    train_logistic_regression()
