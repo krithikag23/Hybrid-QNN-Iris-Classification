@@ -10,3 +10,10 @@ We use the classic **Iris dataset** (from `sklearn.datasets`) and reduce the tas
 - **Binary classification:**
   - Class `0` → Setosa 
   - Class `1` → Versicolor + Virginica (combined)
+
+Input features:
+
+- Petal length  
+- Petal width  
+
+These are scaled and fed into a **hybrid classical–quantum model**.
